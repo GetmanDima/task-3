@@ -1,0 +1,20 @@
+{
+    // https://nuxt.com/docs/guide/concepts/typescript
+    "extends": "./.nuxt/tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+            "@shared": [
+                "./shared"
+            ],
+            "@shared/*": [
+                "./shared/*"
+            ],
+            "@features/*": [
+                "./features/*"
+            ],
+            "@layouts/*": [
+                "./layouts/*"
+            ],
+        }
+    }
+}
