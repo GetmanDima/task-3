@@ -1,7 +1,7 @@
 <template>
     <VForm title="Посчитать сумму">
         <div>
-            <div v-for="(val, i) in values" class="mb-[20px] ">
+            <div v-for="(val, i) in values" :key="i" class="mb-[20px]">
                 <NumberInput :value="val" :maxlength="14" placeholder="Введите число" @input="(v: any) => values[i] = v" />
             </div>
         </div>
